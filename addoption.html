@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3つの候補</title>
+</head>
+
+<body>
+
+<button onclick="showOptions()">候補を表示</button>
+
+<div id="options"></div>
+
+<script>
+function showOptions() {
+  const list = `
+    <ul>
+      <li>候補1</li>
+      <li>候補2</li>
+      <li>候補3</li>
+    </ul>
+  `;
+  document.getElementById("options").innerHTML = list;
+}
+</script>
+
+</body>
+</html>
